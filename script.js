@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector('[data-testid="utcMinutes"]').textContent = `${String(currentMinutes).padStart(2, '0')}`;
         document.querySelector('[data-testid="utcSeconds"]').textContent = `${String(currentSeconds).padStart(2, '0')}`;
         document.querySelector('[data-testid="ampm"]').textContent = `${ampm}`;
-        document.querySelector('[data-testid="currentUTCTime"]').textContent = `UTC: ${String(now.getUTCMilliseconds()).padStart(3, '0')}ms`;
+        document.querySelector('[data-testid="currentUTCTime"]').textContent = `UTC: ${now.getTime()}ms`;
 
         // Update every second
         setTimeout(updateTime, 1000);
