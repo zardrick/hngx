@@ -30,13 +30,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Display the date and time information
         document.querySelector('[data-testid="currentDayOfWeek"]').textContent = currentDayOfWeek;
-        document.querySelector('[data-testid="currentMonth"]').textContent = currentMonth;
-        document.querySelector('[data-testid="currentDayOfMonth"]').textContent = currentDayOfMonth;
-        document.querySelector('[data-testid="currentYear"]').textContent = currentYear;
-        document.querySelector('[data-testid="utcHours"]').textContent = `${currentHour}`;
-        document.querySelector('[data-testid="utcMinutes"]').textContent = `${String(currentMinutes).padStart(2, '0')}`;
-        document.querySelector('[data-testid="utcSeconds"]').textContent = `${String(currentSeconds).padStart(2, '0')}`;
-        document.querySelector('[data-testid="ampm"]').textContent = `${ampm}`;
+        document.querySelector('[id="currentMonth"]').textContent = currentMonth;
+        document.querySelector('[id="currentDayOfMonth"]').textContent = currentDayOfMonth;
+        document.querySelector('[id="currentYear"]').textContent = currentYear;
+        document.querySelector('[id="utcHours"]').textContent = `${currentHour}`;
+        document.querySelector('[id="utcMinutes"]').textContent = `${String(currentMinutes).padStart(2, '0')}`;
+        document.querySelector('[id="utcSeconds"]').textContent = `${String(currentSeconds).padStart(2, '0')}`;
+        document.querySelector('[id="ampm"]').textContent = `${ampm}`;
         document.querySelector('[data-testid="currentUTCTime"]').textContent = `UTC: ${now.getTime()}ms`;
 
         // Update every second
