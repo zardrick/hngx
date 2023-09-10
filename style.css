@@ -96,7 +96,7 @@ body {
 }
 
 .timeContainer {
-    font-size: 50px;
+    font-size: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,7 +112,7 @@ letter-spacing: 3px;
 
 .timeContainer span:last-child {
     background-color: #2e94e3;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
     margin-top: 10px;
