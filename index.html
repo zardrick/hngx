@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>zard</title>
+</head>
+<body>
+
+    <div class="center-container">
+        <div class="displayImageContainer">
+            <img src="slack-profile.jpg" alt="zard" data-testid="slackDisplayImage">
+        </div>
+        <h1 data-testid="slackUserName">ZARD</h1>
+        <h2>Akinosho Peter Ayomide</h2>
+        <h3>Frontend Web Developer</h3>
+    </div>
+
+    <div class="dayOfWeek">
+    <p data-testid="currentDayOfWeek"></p>
+    </div>
+    <div class="dateAndTimeContainer">
+        <div class="dateContainer">
+            <span data-testid="currentMonth"></span>
+            <span data-testid="currentDayOfMonth"></span>,
+            <span data-testid="currentYear"></span>
+        </div>
+        <div class="timeContainer">
+            <span data-testid="utcHours"></span>:
+            <span data-testid="utcMinutes"></span>:
+            <span data-testid="utcSeconds"></span>
+            <span data-testid="ampm"></span>
+        </div>
+        <p data-testid="currentUTCTime" class="utcTimeDisplay"></p>
+    </div>
+
+    <div class="trackAndRepository">
+    <p data-testid="myTrack" class="trackContainer">Frontend</p>
+    <a href="https://github.com/zardrick/hngx.git" data-testid="githubURL" class="githubURLContainer">GitHub Repository</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

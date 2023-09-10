@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #10101e;
+}
+
+.displayImageContainer {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden;
+    margin: 25px;
+    margin-top: 12px;
+    border: 7px solid #DAC3A5;
+}
+
+.displayImageContainer img {
+    width: 100%;
+    height: auto;
+}
+
+.displayImageContainer:hover {
+    box-shadow: 0 0 20px #DAC3A5;
+    transition: 0.3s;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.center-container h1 {
+    font-size: 50px;
+    color: #DAC3A5;
+}
+
+.center-container h2 {
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.center-container h3 {
+    color: #bebebe; 
+    font-size: 13px; 
+    font-weight: 100;
+}
+
+.dayOfWeek {
+    color: #fff;
+    font-size: 25px;
+    margin: auto;
+    margin-top: 50px;
+    width: 350px;
+    align-items: center;
+    text-align: center;
+    background-color: #2e94e3;
+    border-collapse: collapse;
+}
+
+.dateAndTimeContainer {
+    color: #fff;
+    background-color: #0000;
+    padding: 15px 10px;
+    width: 350px;
+    border: 3px solid #2e94e3;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.dateAndTimeContainer:hover {
+    background-color: #2e94e3;
+    box-shadow: 0 0 30px #2e94e3;
+    transition: 0.3s;
+    transition-property: background-color, box-shadow;
+}
+
+.dateContainer {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.timeContainer {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeContainer span:not(:last-child) {
+position: relative;
+margin: 0 6px;
+font-weight: 600;
+text-align:  center;
+letter-spacing: 3px;
+}
+
+.timeContainer span:last-child {
+    background-color: #2e94e3;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 0 5px;
+    border-radius: 3px;
+}
+
+.utcTimeDisplay {
+    margin: auto;
+    text-align: center;
+}
+
+.trackAndRepository {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.trackAndRepository a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.trackContainer {
+    width: 140px;
+    background-color: #DAC3A5;
+    padding: 20px;
+    color: #10101e;
+    font-weight: 700;
+}
+
+.githubURLContainer {
+    background-color: #10101e;
+    border: 3px solid #DAC3A5;
+    padding: 17px;
+    width: 204px;
+}
+
+.githubURLContainer:hover {
+    background-color: #DAC3A5;
+    box-shadow: 0 0 30px #DAC3A5;
+    transition: 0.3s;
+    transform: scale(1.2);
+}
